@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portafolio – Jeanettis</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Inter:wght@400;600&display=swap"
+    rel="stylesheet">
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- NAV -->
+  <div class="nav-wrap">
+    <nav>
+      <div class="brand"><span class="dot"></span><b>Portafolio</b></div>
+      <button class="menu-btn" aria-label="Abrir menú" title="Menú">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a class="active" href="#home">Inicio</a>
+        <a href="#about">Sobre mí</a>
+        <a href="#Areas">Áreas</a>
+        <a href="#toolbelt">Habilidades</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#hire">Contacto</a>
+      </div>
+      <button class="mode-btn" id="modeBtn" aria-label="Cambiar tema">🌙</button>
+    </nav>
+  </div>
+
+  <!-- HERO -->
+  <header id="home" class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="hello"><small>Hola</small> <span aria-hidden>✨</span></div>
+        <h1>
+          Soy <span class="accent typing" id="typeName" aria-label="Jeanettis"></span>
+        </h1>
+
+        <p class="lead">Ingeniería de Sistemas | Data Analytics | Diseño UX/UI | Desarrollo Web</p>
+        <div class="cta">
+          <a class="btn primary" href="#projects">Contáctame ↗</a>
+        </div>
+      </div>
+      <div>
+        <div class="hero-card">
+          <img class="portrait" alt="Retrato"
+            src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=640&auto=format&fit=crop" />
+          <div class="kpis">
+            <div class="stars">★★★★★</div>
+            <div class="kpi"><b>Innovar</b><br><small>con propósito</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">Sobre mí</h2>
+      <div class="card">
+        <p>
+          Egresada de Ingeniería de Sistemas, una carrera que me ha permitido desarrollar una visión integral para
+          resolver problemas desde distintas perspectivas.
+          A lo largo de mi formación he sido constante y comprometida, disfrutando cada reto como una oportunidad para
+          aprender y crecer.
+          He trabajado aplicando metodologías ágiles como Scrum y Design Thinking para llevar a cabo proyectos de manera
+          colaborativa, iterativa y centrada en el usuario, asegurando que las soluciones sean funcionales y relevantes.
+          Me apasiona que mis propuestas no solo funcionen, sino que generen un impacto positivo en quienes las usan. Me
+          considero responsable, organizada y curiosa, siempre dispuesta a dar lo mejor de mí y a seguir aprendiendo
+          para aportar valor en cada proyecto.
+        </p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- areas -->
+  <section id="Areas">
+    <div class="container">
+      <h2 class="section-title">Áreas de Enfoque</h2>
+      <div class="cards">
+        <article class="card">
+          <span class="badge">Diseño UX/UI</span>
+          <h3>Experiencia de usuario | Interfaz de usuario</h3>
+          <p class="muted">Creación de interfaces intuitivas, accesibles y centradas en el usuario, aplicando la
+            metodología Design Thinking.</p>
+          <p class="herramientas">Herramientas:<i> Figma | Adobe Illustrator | Miro | Optimal Workshop</i> </p>
+        </article>
+        <article class="card">
+          <span class="badge">Data Analytics</span>
+          <h3>Análisis de Datos</h3>
+          <p>Análisis de datos enfocado en la obtención de información para la toma de decisiones. El proceso
+            incluye la investigación y extracción de datos bajo la metodología SMART y las Fases de análisis de
+            datos.Todo dentro del ciclo de vida de los datos</p>
+          <p class="herramientas">Herramientas:<i> Excel | Power BI | SQL | Google Analytics | Looker Studio |
+              Python</i> </p>
+        </article>
+        <article class="card">
+          <span class="badge">Desarrollo Web</span>
+          <h3>Código Puro - WordPress </h3>
+          <p>Desarrollo de sitios web funcionales, responsivos y optimizados, siguiendo la metodología ágil Scrum para
+            cada fase del proyecto.</p>
+          <p class="herramientas">Herramientas:<i> HTML | CSS | JavaScript | PHP | MySQL | Bootstrap | Git</i> </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Iconos de herramientas flotando -->
+  <section id="toolbelt">
+    <div class="container">
+      <h2 class="section-title">Habilidades Técnicas</h2>
+      <div class="leyenda">
+        <span><span class="dot basico"></span> Básico</span>
+        <span><span class="dot intermedio"></span> Intermedio</span>
+        <span><span class="dot avanzado"></span> Avanzado</span>
+      </div>
+
+      <div class="tool-cloud">
+        <!-- fila 1 -->
+        <div class="bubble float-1 nivel-intermedio">
+          <iconify-icon icon="logos:figma"></iconify-icon><span>Figma</span>
+        </div>
+        <div class="bubble float-2 nivel-basico">
+          <iconify-icon icon="logos:adobe-illustrator"></iconify-icon><span>Illustrator</span>
+        </div>
+        <div class="bubble float-3 nivel-intermedio">
+          <iconify-icon icon="simple-icons:powerbi" style="color:#F2C811"></iconify-icon><span>Power BI</span>
+        </div>
+        <div class="bubble float-1 nivel-intermedio">
+          <iconify-icon icon="simple-icons:microsoftsqlserver" style="color:#CC2927"></iconify-icon><span>SQL
+            Server</span>
+        </div>
+        <div class="bubble float-2 nivel-intermedio">
+          <iconify-icon icon="vscode-icons:file-type-excel"></iconify-icon>
+          <span>Excel</span>
+        </div>
+
+        <!-- fila 2 -->
+        <div class="bubble float-3 nivel-intermedio">
+          <iconify-icon icon="logos:html-5"></iconify-icon><span>HTML5</span>
+        </div>
+        <div class="bubble float-2 nivel-intermedio">
+          <iconify-icon icon="logos:css-3"></iconify-icon><span>CSS3</span>
+        </div>
+        <div class="bubble float-1 nivel-intermedio">
+          <iconify-icon icon="logos:javascript"></iconify-icon><span>JavaScript</span>
+        </div>
+        <div class="bubble float-2 nivel-intermedio icon-dark">
+          <iconify-icon icon="logos:bootstrap"></iconify-icon><span>Bootstrap</span>
+        </div>
+        <div class="bubble float-3 nivel-intermedio">
+          <iconify-icon icon="logos:php"></iconify-icon><span>PHP</span>
+        </div>
+
+        <!-- fila 3 -->
+        <div class="bubble float-1 nivel-intermedio">
+          <iconify-icon icon="logos:mysql"></iconify-icon><span>MySQL</span>
+        </div>
+        <div class="bubble float-2 nivel-intermedio">
+          <iconify-icon icon="logos:git-icon"></iconify-icon><span>Git</span>
+        </div>
+        <div class="bubble float-3 nivel-intermedio">
+          <iconify-icon class="ico-themable" icon="simple-icons:github"></iconify-icon>
+          <span>GitHub</span>
+        </div>
+        <div class="bubble float-2 nivel-intermedio">
+          <iconify-icon class="ico-themable" icon="simple-icons:wordpress"></iconify-icon>
+          <span>WordPress</span>
+        </div>
+        <div class="bubble float-1 nivel-intermedio">
+          <iconify-icon icon="logos:google-analytics"></iconify-icon><span>Google Analytics</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="softskills" class="soft">
+    <div class="container">
+      <h2 class="section-title">Habilidades blandas</h2>
+
+      <div class="ss-grid">
+        <article class="ss-card">
+          <div class="ss-ico"><i class="bi bi-chat-dots"></i></div>
+          <h3>Comunicación</h3>
+          <!-- <p>Escucha activa y claridad al explicar ideas.</p> -->
+        </article>
+
+        <article class="ss-card">
+          <div class="ss-ico"><i class="bi bi-people"></i></div>
+          <h3>Trabajo en equipo</h3>
+          <!-- <p>Colaboración y apoyo para objetivos comunes.</p> -->
+        </article>
+
+        <article class="ss-card">
+          <div class="ss-ico"><i class="bi bi-clock-history"></i></div>
+          <h3>Gestión del tiempo</h3>
+          <!-- <p>Priorizar, planificar y cumplir plazos.</p> -->
+        </article>
+
+        <article class="ss-card">
+          <div class="ss-ico"><i class="bi bi-lightbulb"></i></div>
+          <h3>Pensamiento crítico</h3>
+          <!-- <p>Analizar, comparar y tomar decisiones.</p> -->
+        </article>
+
+        <article class="ss-card">
+          <div class="ss-ico"><i class="bi bi-heart"></i></div>
+          <h3>Empatía</h3>
+          <!-- <p>Comprender necesidades y contexto del usuario.</p> -->
+        </article>
+
+        <article class="ss-card">
+          <div class="ss-ico"><i class="bi bi-arrow-repeat"></i></div>
+          <h3>Adaptabilidad</h3>
+          <!-- <p>Responder bien al cambio y aprender rápido.</p> -->
+        </article>
+
+        <article class="ss-card">
+          <div class="ss-ico"><i class="bi bi-lightning-charge"></i></div>
+          <h3>Proactividad</h3>
+          <!-- <p>Anticipar problemas y proponer mejoras.</p> -->
+        </article>
+
+        <article class="ss-card">
+          <div class="ss-ico"><i class="bi bi-tools"></i></div>
+          <h3>Resolución de problemas</h3>
+          <!-- <p>Enfocar el objetivo y construir soluciones.</p> -->
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <div class="projects-head">
+        <h2 class="section-title">Proyectos</h2>
+        <div class="filter">
+          <div class="tabs" role="tablist" aria-labelledby="category-label">
+            <button class="tab is-active" role="tab" aria-selected="true" data-value="all">Todos</button>
+            <button class="tab" role="tab" aria-selected="false" data-value="desarrollo">Desarrollo web</button>
+            <button class="tab" role="tab" aria-selected="false" data-value="datos">Análisis de datos</button>
+            <button class="tab" role="tab" aria-selected="false" data-value="diseno">Diseño UX/UI</button>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="grid" id="projectGrid">
+      </div>
+    </div>
+  </section>
+
+  <!-- HIRE / CONTACT BUTTONS -->
+  <section id="hire" class="hire">
+    <div class="container hire-grid">
+      <div class="hire-visual">
+        <div class="hire-ellipse"></div>
+        <img class="hire-portrait" alt="Foto"
+          src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=640&auto=format&fit=crop">
+      </div>
+
+      <div class="hire-content">
+        <h2 class="section-title">¿Por qué <span class="accent">contactarme</span>?</h2>
+        <p class="muted">
+          Porque transformo datos en información útil para tomar decisiones informadas, me apasiona asumir nuevos
+          retos, y afrontarlos con creatividad para encontrar la mejor solución.
+        </p>
+
+        <div class="hire-stats">
+          <div class="stat"><b>10+</b><small>Proyectos</small></div>
+          <div class="stat"><b>10+</b><small>Conocimiento en Herramientas Tecnológicas</small></div>
+        </div>
+
+        <div class="contact-buttons">
+
+          <a class="icon-btn" href="https://www.linkedin.com/in/jeanettis-luyo-data-analytics-ux-ui/" target="_blank"
+            rel="noreferrer">
+            <span class="ico">
+              <!-- LinkedIn -->
+              <i class="bi bi-linkedin"></i>
+            </span>
+            LinkedIn
+          </a>
+
+          <a class="icon-btn" href="https://wa.me/51910089718?text=Hola%20quiero%20m%C3%A1s%20informaci%C3%B3n."
+            target="_blank" rel="noreferrer">
+            <span class="ico">
+              <!-- WhatsApp -->
+              <i class="bi bi-whatsapp"></i>
+            </span>
+            WhatsApp
+          </a>
+
+          <a class="icon-btn" href="mailto:luyoc27@gmail.com">
+            <span class="ico">
+              <!-- Gmail -->
+              <i class="bi bi-envelope-fill"></i>
+            </span>
+            Gmail
+          </a>
+
+          <a class="icon-btn" href="https://www.behance.net/marielluyo" target="_blank" rel="noreferrer">
+            <span class="ico">
+              <!-- Behance -->
+              <i class="bi bi-behance"></i>
+            </span>
+            Behance
+          </a>
+          <a class="icon-btn" href="https://github.com/MarielLC" target="_blank" rel="noreferrer">
+            <span class="ico">
+              <!-- github -->
+              <i class="bi bi-github"></i>
+            </span>
+            GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <footer class="footer-mini">
+    <div class="footer-inner">
+      <div class="fm-left">
+        <span class="dot"></span>
+        <small>Jeanettis Luyo Correa</small>
+      </div>
+
+      <div class="fm-center">
+        <small>© <span id="year"></span> — Ingeniería de Sistemas · Hecho con ♥</small>
+      </div>
+
+      <div class="fm-right">
+        <a href="https://www.linkedin.com/in/jeanettis-luyo-data-analytics-ux-ui/" target="_blank"
+          aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="https://wa.me/51910089718?text=Hola%20quiero%20m%C3%A1s%20informaci%C3%B3n." target="_blank"
+          aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+        <a href="https://www.behance.net/marielluyo" target="_blank" aria-label="Behance"><i
+            class="bi bi-behance"></i></a>
+        <a href="mailto:luyoc27@gmail.com" aria-label="Correo"><i class="bi bi-envelope-fill"></i></a>
+        <a href="https://github.com/MarielLC" target="_blank" aria-label="Github"><i class="bi bi-github"></i></a>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+<script src="script.js"></script>
+
+</html>
