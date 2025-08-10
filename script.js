@@ -47,12 +47,12 @@ window.addEventListener('scroll', setActive);
 
 // Proyectos demo (puedes reemplazar por tus propios datos)
 const projects = [
-    { title: 'Psotula Smart', cat: 'diseno', tags: ['Figma', 'UI Kit'], img: './Assets/images/POSTULA.png', src: 'https://www.behance.net/gallery/196849055/Postula-Smart-UX-UI-Design' },
-    { title: 'Dashboard de ventas', cat: 'datos', tags: ['Power BI', 'DAX'], img: '' },
-    { title: 'Ecommerce minimal', cat: 'desarrollo', tags: ['HTML', 'CSS', 'JS'], img: '' },
-    { title: 'Rediseño app delivery', cat: 'diseno', tags: ['UX', 'Prototype'], img: '' },
-    { title: 'Modelo de churn', cat: 'datos', tags: ['SQL', 'ML'], img: '' },
-    { title: 'Portal municipal', cat: 'desarrollo', tags: ['PHP', 'Bootstrap'], img: '' }
+    { title: 'Postula Smart', cat: 'diseno', tags: ['Figma', 'UI Kit'], img: './Assets/images/Postula_Smart_2.jpg', src: 'https://www.behance.net/gallery/196849055/Postula-Smart-UX-UI-Design' },
+    { title: 'Universidades Licenciadas en el Perú', cat: 'datos', tags: ['Power BI', 'DAX', 'Excel'], img: './Assets/images/sunedu_2.jpg' },
+    { title: 'Portal Web de la Municipalidad Distrital de Quilmaná', cat: 'desarrollo', tags: ['HTML', 'CSS', 'JS', 'Boostrap', 'PHP', 'MySQL'], img: './Assets/images/mdq_2.jpg' , src: 'https://www.behance.net/gallery/230457805/Portal-Web-de-la-Municipalidad-Distrital-de-Quilmana' },
+    { title: 'Sistema de Ventas de la Agencia Vive tu Aventura', cat: 'diseno', tags: ['Figma', 'Prototype', 'UI Kit'], img: './Assets/images/agencia_2.jpg', src: 'https://www.behance.net/gallery/202987841/Sistema-de-ventas-Vive-tu-aventura-Lunahuana' },
+    { title: 'Publicidad para Redes Sociales', cat: 'diseno', tags: ['Canva', 'Adobe Illustrator', 'Figma'], img: './Assets/images/aruma_2.jpg', src: 'https://www.behance.net/gallery/218757957/Carrusel-para-redes-sociales-ARUMA' },
+    // { title: 'Portal municipal', cat: 'desarrollo', tags: ['PHP', 'Bootstrap'], img: '' }
 ];
 
 const grid = document.getElementById('projectGrid');
