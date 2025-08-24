@@ -52,7 +52,9 @@ const projects = [
     { title: 'Portal Web de la Municipalidad Distrital de Quilmaná', cat: 'desarrollo', tags: ['HTML', 'CSS', 'JS', 'Boostrap', 'PHP', 'MySQL'], img: './Assets/images/mdq_2.jpg' , src: 'https://www.behance.net/gallery/230457805/Portal-Web-de-la-Municipalidad-Distrital-de-Quilmana' },
     { title: 'Sistema de Ventas de la Agencia Vive tu Aventura', cat: 'diseno', tags: ['Figma', 'Prototype', 'UI Kit'], img: './Assets/images/agencia_2.jpg', src: 'https://www.behance.net/gallery/202987841/Sistema-de-ventas-Vive-tu-aventura-Lunahuana' },
     { title: 'Publicidad para Redes Sociales', cat: 'diseno', tags: ['Canva', 'Adobe Illustrator', 'Figma'], img: './Assets/images/aruma_2.jpg', src: 'https://www.behance.net/gallery/218757957/Carrusel-para-redes-sociales-ARUMA' },
-    // { title: 'Portal municipal', cat: 'desarrollo', tags: ['PHP', 'Bootstrap'], img: '' }
+    { title: 'Data Reporting: Vive tu Aventura Lunahuaná', cat: 'datos', tags: ['Excel', 'VBA', 'Tablas dinámicas', 'Macros'],  img: './Assets/images/excel_vive.jpg', src: 'https://www.behance.net/gallery/232571569/Data-Reporting-Vive-tu-Aventura-Lunahuana' },
+    { title: 'Data Reporting: Covid-19 en el Mundo', cat: 'datos', tags: ['Excel', 'Power BI', 'Base de Datos'],  img: './Assets/images/covid.jpg', src: 'https://www.behance.net/gallery/232629925/Data-Reporting-Covid19-en-el-mundo' },
+     { title: 'Data Analytics: Herramientas Aplicadas', cat: 'datos', tags: ['Excel', 'Power BI', 'Base de Datos', 'SQL Server'],  img: './Assets/images/proyectos.jpg', src: 'https://www.behance.net/gallery/233211341/Data-Analytics-Ejercicios-Practicos' }
 ];
 
 const grid = document.getElementById('projectGrid');
@@ -129,7 +131,7 @@ document.getElementById('year').textContent = new Date().getFullYear();
   if (!el) return;
 
   const text = el.getAttribute('aria-label') || 'Jeanettis';
-  const speed = 85; // ms por letra
+  const speed = 700; // ms por letra
 
   const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   if (reduce) { el.textContent = text; return; }

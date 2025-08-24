@@ -24,7 +24,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
   <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
 
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="./Assets/css/styles.css">
 </head>
 
 <body>
@@ -36,7 +36,7 @@
       <div class="nav-links" id="navLinks">
         <a class="active" href="#home">Inicio</a>
         <a href="#about">Sobre mí</a>
-        <a href="#Areas">Áreas</a>
+        <!-- <a href="#Areas">Áreas</a> -->
         <a href="#toolbelt">Habilidades</a>
         <a href="#projects">Proyectos</a>
         <a href="#hire">Contacto</a>
@@ -44,7 +44,6 @@
       <button class="mode-btn" id="modeBtn" aria-label="Cambiar tema">🌙</button>
     </nav>
   </div>
-
   <!-- HERO -->
   <header id="home" class="hero">
     <div class="container hero-grid">
@@ -53,16 +52,14 @@
         <h1>
           Soy <span class="accent typing" id="typeName" aria-label="Jeanettis"></span>
         </h1>
-
-        <p class="lead">Ingeniería de Sistemas | Data Analytics | Diseño UX/UI | Desarrollo Web</p>
+        <p class="lead">Ingeniería de Sistemas | Data Analytics | Reporting & Dashboard</p>
         <div class="cta">
           <a class="btn primary" href="#hire">Contáctame ↗</a>
         </div>
       </div>
       <div>
         <div class="hero-card">
-          <img class="portrait" alt="Retrato"
-            src="./Assets/images/yo_2.jpg" />
+          <img class="portrait" alt="Retrato" src="./Assets/images/yo_2.jpg" />
           <div class="kpis">
             <div class="stars">★★★★★</div>
             <div class="kpi"><b>Innovar</b><br><small>con propósito</small></div>
@@ -78,15 +75,10 @@
       <h2 class="section-title">Sobre mí</h2>
       <div class="card">
         <p>
-          Egresada de Ingeniería de Sistemas, una carrera que me ha permitido desarrollar una visión integral para
-          resolver problemas desde distintas perspectivas.
-          A lo largo de mi formación he sido constante y comprometida, disfrutando cada reto como una oportunidad para
-          aprender y crecer.
-          He trabajado aplicando metodologías ágiles como Scrum y Design Thinking para llevar a cabo proyectos de manera
-          colaborativa, iterativa y centrada en el usuario, asegurando que las soluciones sean funcionales y relevantes.
-          Me apasiona que mis propuestas no solo funcionen, sino que generen un impacto positivo en quienes las usan. Me
-          considero responsable, organizada y curiosa, siempre dispuesta a dar lo mejor de mí y a seguir aprendiendo
-          para aportar valor en cada proyecto.
+          Egresada de la carrera de Ingeniería de Sistemas, con conocimientos en análisis de datos, reporting y
+          desarrollo de dashboards en Excel y Power BI. Manejo intermedio de SQL, Excel y Power BI. He trabajado en
+          proyectos aplicando metodologías ágiles como Scrum y Design Thinking. Me considero responsable, organizada y
+          curiosa, siempre dispuesta a dar lo mejor de mí y a seguir aprendiendo para aportar valor en cada proyecto.
         </p>
       </div>
     </div>
@@ -94,7 +86,7 @@
   </section>
 
   <!-- areas -->
-  <section id="Areas">
+  <!-- <section id="Areas">
     <div class="container">
       <h2 class="section-title">Áreas de Enfoque</h2>
       <div class="cards">
@@ -123,7 +115,7 @@
         </article>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- Iconos de herramientas flotando -->
   <section id="toolbelt">
@@ -137,12 +129,6 @@
 
       <div class="tool-cloud">
         <!-- fila 1 -->
-        <div class="bubble float-1 nivel-intermedio">
-          <iconify-icon icon="logos:figma"></iconify-icon><span>Figma</span>
-        </div>
-        <div class="bubble float-2 nivel-basico">
-          <iconify-icon icon="logos:adobe-illustrator"></iconify-icon><span>Illustrator</span>
-        </div>
         <div class="bubble float-3 nivel-intermedio">
           <iconify-icon icon="simple-icons:powerbi" style="color:#F2C811"></iconify-icon><span>Power BI</span>
         </div>
@@ -154,8 +140,21 @@
           <iconify-icon icon="vscode-icons:file-type-excel"></iconify-icon>
           <span>Excel</span>
         </div>
+        <div class="bubble float-1 nivel-basico">
+          <iconify-icon icon="simple-icons:powerautomate" style="color:#2774cc"></iconify-icon>
+          <span>Power Automate</span>
+        </div>
+
+        <div class="bubble float-1 nivel-basico">
+          <iconify-icon icon="logos:google-analytics"></iconify-icon><span>Google Analytics</span>
+        </div>
+
 
         <!-- fila 2 -->
+        <div class="bubble float-1 nivel-basico">
+          <iconify-icon icon="logos:python"></iconify-icon>
+          <span>Python</span>
+        </div>
         <div class="bubble float-3 nivel-intermedio">
           <iconify-icon icon="logos:html-5"></iconify-icon><span>HTML5</span>
         </div>
@@ -176,19 +175,15 @@
         <div class="bubble float-1 nivel-intermedio">
           <iconify-icon icon="logos:mysql"></iconify-icon><span>MySQL</span>
         </div>
-        <div class="bubble float-2 nivel-intermedio">
+        <div class="bubble float-2 nivel-basico">
           <iconify-icon icon="logos:git-icon"></iconify-icon><span>Git</span>
         </div>
-        <div class="bubble float-3 nivel-intermedio">
-          <iconify-icon class="ico-themable" icon="simple-icons:github"></iconify-icon>
-          <span>GitHub</span>
-        </div>
-        <div class="bubble float-2 nivel-intermedio">
-          <iconify-icon class="ico-themable" icon="simple-icons:wordpress"></iconify-icon>
-          <span>WordPress</span>
-        </div>
+
         <div class="bubble float-1 nivel-intermedio">
-          <iconify-icon icon="logos:google-analytics"></iconify-icon><span>Google Analytics</span>
+          <iconify-icon icon="logos:figma"></iconify-icon><span>Figma</span>
+        </div>
+        <div class="bubble float-2 nivel-basico">
+          <iconify-icon icon="logos:adobe-illustrator"></iconify-icon><span>Illustrator</span>
         </div>
       </div>
     </div>
@@ -276,8 +271,7 @@
     <div class="container hire-grid">
       <div class="hire-visual">
         <div class="hire-ellipse"></div>
-        <img class="hire-portrait" alt="Foto"
-          src="./Assets/images/contacto_img.jpg">
+        <img class="hire-portrait" alt="Foto" src="./Assets/images/contacto_img.jpg">
       </div>
 
       <div class="hire-content">
@@ -294,7 +288,7 @@
 
         <div class="contact-buttons">
 
-          <a class="icon-btn" href="https://www.linkedin.com/in/jeanettis-luyo-data-analytics-ux-ui/" target="_blank"
+          <a class="icon-btn" href="https://www.linkedin.com/in/jeanettis-luyo-data-analytics/" target="_blank"
             rel="noreferrer">
             <span class="ico">
               <!-- LinkedIn -->
@@ -354,7 +348,7 @@
       </div>
 
       <div class="fm-right">
-        <a href="https://www.linkedin.com/in/jeanettis-luyo-data-analytics-ux-ui/" target="_blank"
+        <a href="https://www.linkedin.com/in/jeanettis-luyo-data-analytics/" target="_blank"
           aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
         <a href="https://wa.me/51910089718?text=Hola%20quiero%20m%C3%A1s%20informaci%C3%B3n." target="_blank"
           aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
@@ -365,9 +359,7 @@
       </div>
     </div>
   </footer>
-
-
 </body>
-<script src="script.js"></script>
+<script src="./Assets/js/script.js"></script>
 
 </html>

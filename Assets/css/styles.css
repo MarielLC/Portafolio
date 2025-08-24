@@ -8,8 +8,10 @@
     --muted: #6B6B78;
     --nav: #101012;
     --chip: #2A2A2E;
+    --start: #FFC857;
     --ring: rgba(224, 67, 147, .35);
     --shadow: 0 10px 10px rgba(0, 0, 0, .08);
+    --font-family : "Poppins", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
 }
 
 [data-theme="dark"] {
@@ -35,7 +37,7 @@ body {
     margin: 0;
     background: var(--bg);
     color: var(--text);
-    font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    font-family: var(--font-family);
     line-height: 1.5;
     overflow-x: hidden;
     padding-top: 84px;
@@ -118,7 +120,7 @@ nav {
     border: 0;
     cursor: pointer;
     background: var(--chip);
-    color: #fff;
+    color: var(--bg);
     padding: 10px 14px;
     border-radius: 999px
 }
@@ -150,7 +152,7 @@ header.hero {
 }
 
 [data-theme="dark"] .hello {
-    border-color: #222
+    border-color: var(--chip)
 }
 
 h1 {
@@ -220,7 +222,7 @@ h1 .accent {
 }
 
 [data-theme="dark"] .portrait {
-    border-color: #222
+    border-color: var(--chip)
 }
 
 .kpis {
@@ -234,7 +236,7 @@ h1 .accent {
 }
 
 .stars {
-    color: #FFC857;
+    color: var(--start);
     font-size: 20px
 }
 
@@ -247,7 +249,7 @@ h1 .accent {
 
 [data-theme="light"] .kpi {
     background: #fff;
-    color: #111;
+    color: var(--text);
     box-shadow: var(--shadow)
 }
 
@@ -293,7 +295,7 @@ section {
     padding: 6px 10px;
     border-radius: 999px;
     background: var(--primary-200);
-    color: #7A1046;
+    color: var(--primary-600);
     font-weight: 700
 }
 
@@ -316,14 +318,15 @@ section {
 }
 
 .thumb {
-  aspect-ratio: 12.5/10;
-  background:
-    linear-gradient(135deg, var(--primary-200), transparent),
-    #D9D9E1;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 12px; /* opcional para que sea más bonito */
+    aspect-ratio: 12.5/10;
+    background:
+        linear-gradient(135deg, var(--primary-200), transparent),
+        #D9D9E1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    /* opcional para que sea más bonito */
 }
 
 
@@ -446,11 +449,6 @@ section {
         flex: 0 0 auto;
     }
 }
-
-
-/* PROEYCTO SELEC */
-
-
 
 /* HIRE / CONTACTO */
 .hire {
@@ -998,3 +996,98 @@ section {
         border-right: none;
     }
 }
+
+/* contacto page------------------------ */
+/* Vista completa sin scroll (resta tu navbar de 84px) */
+#contacto.contact--full{
+  min-height: calc(100vh - 84px);
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  background: var(--bg);
+}
+@supports (height: 100svh){
+  #contacto.contact--full{ min-height: calc(100svh - 84px); }
+}
+
+/* Tarjeta compacta SOLO del contacto (renombrada c-card) */
+#contacto .c-card{
+  width: min(520px, 92vw);
+  display: grid;
+  gap: .3rem;
+  background: var(--surface);
+  border: 1px solid rgba(0,0,0,.06);
+  border-radius: 16px;
+  box-shadow: var(--shadow);      /* antes estaba mal: no uses var(--surface) aquí */
+  padding: 16px;
+}
+[data-theme="dark"] #contacto .c-card{ border-color:#222; }
+
+#contacto .c-title{
+  margin: 0 0 .25rem;
+  font-size: 1.25rem;
+  font-weight: 800;
+  text-align: center;
+  /* color: var(--primary); */
+}
+
+/* Campos (scopeados a #contacto) */
+#contacto input[type="text"],
+#contacto input[type="email"],
+#contacto textarea{
+  width: 100%;
+  border: 1px solid rgba(0,0,0,.12);
+  background: rgba(255,255,255,.02);
+  color: var(--text);
+  border-radius: 12px;
+  padding: .85rem 1rem;
+  outline: none;
+  transition: border-color .15s, box-shadow .15s;
+  font-family: var(--font-family);
+}
+[data-theme="dark"] #contacto input,
+[data-theme="dark"] #contacto textarea{ border-color: rgba(255,255,255,.12); }
+
+/* Placeholders consistentes */
+#contacto input::placeholder,
+#contacto textarea::placeholder{
+  color: var(--muted);
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  opacity: 1;
+}
+
+/* Focus accesible */
+#contacto input:focus,
+#contacto textarea:focus{
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px var(--ring);
+}
+
+/* Botón SOLO del contacto (renombrado c-btn) */
+#contacto .c-btn{
+  margin-top: .2rem;
+  width: 100%;
+  background: var(--primary);
+  color: #fff;
+  font-weight: 800;
+  border: 0;
+  border-radius: 12px;
+  padding: .9rem 1rem;
+  cursor: pointer;
+  transition: filter .2s ease, transform .05s ease;
+}
+#contacto .c-btn:hover{ filter: brightness(1.05); }
+#contacto .c-btn:active{ transform: translateY(1px); }
+#contacto .c-btn[disabled]{ opacity:.6; cursor:not-allowed; }
+
+/* Mensajería de error/estado */
+#contacto .c-err{ min-height:.9rem; font-size:.85rem; color:#ff6b7d; }
+#contacto .c-toast{ display:none; text-align:center; font-weight:700; margin-top:.25rem; }
+#contacto .c-toast.ok{ display:block; color:#27c498; }
+#contacto .c-toast.err{ display:block; color:#ff6b7d; }
+
+/* Utilidades internas */
+#contacto .c-sr{ position:absolute!important; width:1px;height:1px; padding:0;margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+#contacto .c-hp{ position:absolute!important; left:-9999px!important; opacity:0!important; }
