@@ -55,7 +55,6 @@ const projects = [
     { title: 'Data Reporting: Vive tu Aventura Lunahuaná', cat: 'datos', tags: ['Excel', 'VBA', 'Tablas dinámicas', 'Macros'],  img: './Assets/images/excel_vive.jpg', src: 'https://www.behance.net/gallery/232571569/Data-Reporting-Vive-tu-Aventura-Lunahuana' },
     { title: 'Data Reporting: Covid-19 en el Mundo', cat: 'datos', tags: ['Excel', 'Power BI', 'Base de Datos'],  img: './Assets/images/covid.jpg', src: 'https://www.behance.net/gallery/232629925/Data-Reporting-Covid19-en-el-mundo' },
     { title: 'Data Analytics: Herramientas Aplicadas', cat: 'datos', tags: ['Excel', 'Power BI', 'Base de Datos', 'SQL Server'],  img: './Assets/images/proyectos.jpg', src: 'https://www.behance.net/gallery/233211341/Data-Analytics-Ejercicios-Practicos' },
-    { title: 'QA: Pruebas Automatizadas', cat: 'qa', tags: ['Rest Assured', 'Karate DSL', 'Serenity  BDD', 'Cucumber'],  img: './Assets/images/fondo.jpg', src: 'https://www.behance.net/gallery/237333081/Pruebas-Automatizadas-QA-Bootcamp' }
 ];
 
 const grid = document.getElementById('projectGrid');
